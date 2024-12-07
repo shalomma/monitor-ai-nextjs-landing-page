@@ -202,8 +202,6 @@ const HeroSection: React.FC = () => {
 }
 
 const HighlightsSection = () => {
-  const {onCopy, hasCopied } = useClipboard('yarn add @saas-ui/react')
-
   return (
       <Highlights>
           <HighlightsItem colSpan={[1, null, 2]} title="AI-Powered Monitoring">
@@ -234,6 +232,8 @@ const HighlightsSection = () => {
                           </Text>
                       </Box>
                       <IconButton
+                          as={Link}
+                          href="/signup"
                           icon={<FiArrowRight />}
                           aria-label="Get started"
                           variant="ghost"
