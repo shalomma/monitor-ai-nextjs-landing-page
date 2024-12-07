@@ -28,11 +28,11 @@ const siteConfig = {
       },
       {
         label: 'Login',
-        href: 'https://github.com/saas-js/saas-ui',
+        href: '/login',
       },
       {
         label: 'Sign Up',
-        href: 'https://github.com/saas-js/saas-ui',
+        href: '/signup',
         variant: 'primary',
       },
     ],

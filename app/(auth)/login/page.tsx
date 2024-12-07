@@ -30,8 +30,9 @@ const Login: NextPage = () => {
         <PageTransition width="100%">
           <Auth
             view="login"
+            type="password"
             providers={providers}
-            signupLink={<Link href="../signup">Sign up</Link>}
+            signupLink={<Link href="../signup">Sign up for a demo</Link>}
           />
         </PageTransition>
       </Center>

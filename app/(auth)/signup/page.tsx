@@ -2,10 +2,9 @@
 
 import { Box, Center, Stack, Text } from '@chakra-ui/react'
 import { Auth } from '@saas-ui/auth'
-import { Link } from '@saas-ui/react'
+import { Link, StepForm, FormLayout, FormStep, NextButton } from '@saas-ui/react'
 import { NextPage } from 'next'
 import NextLink from 'next/link'
-import { FaGithub, FaGoogle } from 'react-icons/fa'
 
 import { Features } from '#components/features'
 import { BackgroundGradient } from '#components/gradients/background-gradient'
@@ -13,17 +12,6 @@ import { PageTransition } from '#components/motion/page-transition'
 import { Section } from '#components/section'
 import siteConfig from '#data/config'
 
-const providers = {
-  google: {
-    name: 'Google',
-    icon: FaGoogle,
-  },
-  github: {
-    name: 'Github',
-    icon: FaGithub,
-    variant: 'solid',
-  },
-}
 
 const Login: NextPage = () => {
   return (
@@ -76,7 +64,6 @@ const Login: NextPage = () => {
               <Auth
                 view="signup"
                 title={siteConfig.signup.title}
-                providers={providers}
                 loginLink={<Link href="../login">Log in</Link>}
               >
                 <Text color="muted" fontSize="sm">
