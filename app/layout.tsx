@@ -10,11 +10,6 @@ export default function Layout(props: { children: React.ReactNode }) {
     <html lang="en" data-theme={colorMode} style={{ colorScheme: colorMode }}>
       <head>
         <link
-          rel="apple-touch-icon"
-          sizes="76x76"
-          href="/static/favicons/apple-touch-icon.png"
-        />
-        <link
           rel="icon"
           type="image/png"
           sizes="32x32"
