@@ -1,5 +1,3 @@
-import { HStack, Text } from '@chakra-ui/react'
-
 export default {
   title: 'Solutions for every organization',
   description:
