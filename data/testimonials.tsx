@@ -1,42 +1,35 @@
 export default {
-  title: 'Loved by tech people',
-  items: [
-    {
-      name: 'Eelco Wiersma',
-      description: 'Founder Saas UI',
-      avatar:
-        'https://pbs.twimg.com/profile_images/1470742164024008706/k-eXHtu0_normal.jpg',
-      children: (
-        <>
-          “With SaaS UI I am able to produce high quality dashboard apps and
-          internal tools without a lot of design skills. The ROI really is
-          amazing.”
-        </>
-      ),
-    },
-    {
-      name: 'Caroline Yahaya',
-      description: 'Fullstack Developer',
-      avatar: '/static/images/avatar2.jpg',
-      children: (
-        <>
-          “Saas UI allows me to build beautiful and functional UI super fast.
-          The components are very well thought out and the Next.js starter kit
-          saved me at least 100 hours of work.”
-        </>
-      ),
-    },
-    {
-      name: 'Alberto Vazquez',
-      description: 'Frontend Engineer',
-      avatar: '/static/images/avatar3.jpg',
-      children: (
-        <>
-          “Saas UI gave us a perfect starting point for our project, having the
-          storybooks already set up with beautifully crafted components and
-          fully mocked pages was a treat.”
-        </>
-      ),
-    },
-  ],
+    title: 'Trusted by compliance leaders',
+    items: [
+        {
+            name: 'Sarah Chen',
+            description: 'Head of Compliance, TechGrow Solutions',
+            avatar: '/static/images/avatar.jpg',
+            children: (
+                <>
+                    &quot;monitor.ai transformed our regulatory workflow completely. What used to take our team days of document review is now automated with incredible accuracy. The ROI was evident within the first month.&quot;
+                </>
+            ),
+        },
+        {
+            name: 'Michael Rodriguez',
+            description: 'Tender Manager, BuildCorp International',
+            avatar: '/static/images/avatar2.jpg',
+            children: (
+                <>
+                    &quot;Since implementing monitor.ai, our tender success rate has increased by 40%. The AI-powered document analysis and automated checklist generation save us countless hours on each submission.&quot;
+                </>
+            ),
+        },
+        {
+            name: 'Emma Thompson',
+            description: 'Legal Operations Director, HealthTech Innovations',
+            avatar: '/static/images/avatar3.jpg',
+            children: (
+                <>
+                    &quot;The smart filtering and risk assessment features are game-changers. monitor.ai helps us stay ahead of regulatory changes and ensures we never miss critical compliance deadlines in our fast-moving industry.&quot;
+                </>
+            ),
+        },
+    ],
 }

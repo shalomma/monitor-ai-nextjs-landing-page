@@ -257,10 +257,10 @@ const HighlightsSection = () => {
               avatar="/static/images/avatar.jpg"
               gradient={['purple.600', 'blue.800']}
           >
-              "monitor.ai transformed our compliance workflow completely. We went from
+              &quot;monitor.ai transformed our compliance workflow completely. We went from
               spending hours scanning documents to receiving perfectly filtered updates
-              and automated compliance checklists. It's like having an extra team member
-              who never sleeps."
+              and automated compliance checklists. It&apos;s like having an extra team member
+              who never sleeps.&quot;
           </HighlightsTestimonialItem>
           <HighlightsItem
               colSpan={[1, null, 2]}
