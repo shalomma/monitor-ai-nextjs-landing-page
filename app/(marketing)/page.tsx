@@ -223,10 +223,10 @@ const HighlightsSection = () => {
                       _dark={{ bg: 'gray.900' }}
                   >
                       <Box>
-                          <Text color="yellow.400" display="inline">
+                          <Text color="yellow.400" display={{ base: 'block', md: 'inline' }}>
                               Try monitor.ai
                           </Text>{' '}
-                          <Text color="cyan.300" display="inline">
+                          <Text color="cyan.300" display={{ base: 'block', md: 'inline' }}>
                               Free for 30 days
                           </Text>
                       </Box>
@@ -254,12 +254,14 @@ const HighlightsSection = () => {
               name="Sarah Chen"
               description="Compliance Manager"
               avatar="/static/images/avatar.jpg"
-              gradient={['purple.2000', 'blue.1400']}
+              gradient={['purple.600', 'blue.500']}
           >
-              &quot;monitor.ai transformed our compliance workflow completely. We went from
-              spending hours scanning documents to receiving perfectly filtered updates
-              and automated compliance checklists. It&apos;s like having an extra team member
-              who never sleeps.&quot;
+              <Text color="white" _dark={{ color: 'black' }} fontSize="xl">
+                  &quot;monitor.ai transformed our compliance workflow completely. We went from
+                  spending hours scanning documents to receiving perfectly filtered updates
+                  and automated compliance checklists. It&apos;s like having an extra team member
+                  who never sleeps.&quot;
+              </Text>
           </HighlightsTestimonialItem>
           <HighlightsItem
               colSpan={[1, null, 2]}
