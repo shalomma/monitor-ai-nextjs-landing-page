@@ -9,7 +9,7 @@ const faq = {
       a: (
         <>
           monitor.ai uses advanced AI to analyze your existing documents, past tenders,
-          and regulatory requirements. The system continuously learns from your team's
+          and regulatory requirements. The system continuously learns from your team&apos;s
           interactions and feedback to improve its accuracy and relevance. This ensures
           you only receive information that matters to your organization.
         </>
