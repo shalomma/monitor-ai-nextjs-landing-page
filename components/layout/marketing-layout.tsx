@@ -2,7 +2,7 @@
 
 import { Box, SkipNavContent, SkipNavLink } from '@chakra-ui/react'
 
-import { ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 
 import {
   AnnouncementBanner,

@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "@saas-ui/react";
 import { FaTwitter } from "react-icons/fa";
+import React from "react";
 
 export interface TestimonialProps extends CardProps {
   name: string;

@@ -1,5 +1,6 @@
 import { ChakraProps, chakra } from '@chakra-ui/react'
 import { HTMLMotionProps, motion } from 'framer-motion'
+import React from "react";
 
 export interface MotionBoxProps
   extends Omit<HTMLMotionProps<'div'>, 'children' | 'style'>,

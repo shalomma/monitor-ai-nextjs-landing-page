@@ -1,6 +1,7 @@
 import { ColorModeScript, theme } from '@chakra-ui/react'
 
 import { Provider } from './provider'
+import React from "react";
 
 export default function Layout(props: { children: React.ReactNode }) {
   const colorMode = theme.config.initialColorMode

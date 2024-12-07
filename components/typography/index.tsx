@@ -2,9 +2,9 @@ import {
   chakra,
   HTMLChakraProps,
   Text,
-  TextProps,
   useColorModeValue,
 } from '@chakra-ui/react'
+import React from "react";
 
 export const Em: React.FC<HTMLChakraProps<'em'>> = ({ children, ...props }) => {
   return (

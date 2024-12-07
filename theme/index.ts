@@ -12,19 +12,8 @@ export const theme = extendTheme(
       useSystemColorMode: false,
     },
     styles: {
-      global: (props: any) => ({
-        body: {
-          color: 'gray.900',
-          bg: 'white',
-          fontSize: 'lg',
-          _dark: {
-            color: 'white',
-            bg: 'gray.900',
-          },
-        },
-      }),
     },
-    fonts: {
+      fonts: {
       heading: 'Inter Variable, Inter, sans-serif',
       body: 'Inter Variable, Inter, sans-serif',
     },

@@ -11,6 +11,7 @@ import {
 import { Link, LinkProps } from '@saas-ui/react'
 
 import siteConfig from '#data/config'
+import React from "react";
 
 export interface FooterProps extends BoxProps {
   columns?: number

@@ -1,4 +1,5 @@
 import { Container, Flex, FlexProps, Text, VStack } from '@chakra-ui/react'
+import React from "react";
 
 interface HeroProps extends Omit<FlexProps, 'title'> {
   title: string | React.ReactNode

@@ -5,6 +5,7 @@ import {
   StackProps,
   useMultiStyleConfig,
 } from '@chakra-ui/react'
+import React from "react";
 
 export interface SectionTitleProps extends Omit<StackProps, 'title'> {
   title: React.ReactNode

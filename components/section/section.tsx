@@ -7,6 +7,7 @@ import {
   StyleProps,
   HTMLChakraProps,
 } from '@chakra-ui/react'
+import React from "react";
 
 export interface SectionProps
   extends HTMLChakraProps<'div'>,
