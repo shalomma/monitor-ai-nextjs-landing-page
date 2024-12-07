@@ -14,7 +14,6 @@ import {
   Text,
   VStack,
   Wrap,
-  useClipboard,
 } from '@chakra-ui/react'
 import { Br, Link } from '@saas-ui/react'
 import type { NextPage } from 'next'
