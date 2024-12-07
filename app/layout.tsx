@@ -26,6 +26,7 @@ export default function Layout(props: { children: React.ReactNode }) {
           href="/static/favicons/favicon-16x16.png"
         />
         <link rel="manifest" href="/static/favicons/manifest.json" />
+          <title></title>
       </head>
       <body className={`chakra-ui-${colorMode}`}>
         <ColorModeScript initialColorMode={colorMode} />
