@@ -77,10 +77,25 @@ const Signup: NextPage = () => {
                                 {({ Field }) => (
                                     <FormLayout>
                                         <Heading size="md">Personal Information</Heading>
-                                        <Field name="name" label="Name" />
-                                        <Field name="email" label="Email" />
-                                        <Field name="phone" label="Phone Number" />
-                                        <SubmitButton>Submit</SubmitButton>
+                                        <Field
+                                            name="name"
+                                            label="Name"
+                                            isRequired={true}
+                                        />
+                                        <Field
+                                            name="email"
+                                            label="Email"
+                                            type="email"
+                                            isRequired={true}
+                                        />
+                                        <Field
+                                            name="phone"
+                                            label="Phone Number"
+                                            type="number"
+                                            inputMode="tel"
+                                            hideStepper={true}
+                                        />
+                                        <SubmitButton disableIfInvalid>Submit</SubmitButton>
                                     </FormLayout>
                                 )}
                             </Form>
