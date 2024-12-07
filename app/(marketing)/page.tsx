@@ -21,25 +21,16 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import {
     FiArrowRight,
-    FiBox,
-    FiCheck,
     FiCode,
-    FiCopy,
-    FiFlag,
-    FiGrid,
-    FiLock,
-    FiSearch,
-    FiSliders,
-    FiSmile,
-    FiTerminal,
-    FiThumbsUp,
-    FiToggleLeft,
-    FiTrendingUp,
-    FiUserPlus,
     FiFilter,
     FiMonitor,
     FiCheckSquare,
     FiAward,
+    FiDatabase,
+    FiPieChart,
+    FiShield,
+    FiTrello,
+    FiUsers,
 } from 'react-icons/fi'
 
 import * as React from 'react'
@@ -317,101 +308,99 @@ const HighlightsSection = () => {
 
 const FeaturesSection = () => {
   return (
-    <Features
-      id="features"
-      title={
-        <Heading
-          lineHeight="short"
-          fontSize={['2xl', null, '4xl']}
-          textAlign="left"
-          as="p"
-        >
-          Not your standard
-          <Br /> dashboard template.
-        </Heading>
-      }
-      description={
-        <>
-          Saas UI Pro includes everything you need to build modern frontends.
-          <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
-        </>
-      }
-      align="left"
-      columns={[1, 2, 3]}
-      iconSize={4}
-      features={[
-        {
-          title: '#components.',
-          icon: FiBox,
-          description:
-            'All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.',
-          variant: 'inline',
-        },
-        {
-          title: 'Starterkits.',
-          icon: FiLock,
-          description:
-            'Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.',
-          variant: 'inline',
-        },
-        {
-          title: 'Documentation.',
-          icon: FiSearch,
-          description:
-            'Extensively documented, including storybooks, best practices, use-cases and examples.',
-          variant: 'inline',
-        },
-        {
-          title: 'Onboarding.',
-          icon: FiUserPlus,
-          description:
-            'Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.',
-          variant: 'inline',
-        },
-        {
-          title: 'Feature flags.',
-          icon: FiFlag,
-          description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
-          variant: 'inline',
-        },
-        {
-          title: 'Upselling.',
-          icon: FiTrendingUp,
-          description:
-            '#components and hooks for upgrade flows designed to make upgrading inside your app frictionless.',
-          variant: 'inline',
-        },
-        {
-          title: 'Themes.',
-          icon: FiToggleLeft,
-          description:
-            'Includes multiple themes with darkmode support, always have the perfect starting point for your next project.',
-          variant: 'inline',
-        },
-        {
-          title: 'Generators.',
-          icon: FiTerminal,
-          description:
-            'Extend your design system while maintaininig code quality and consistency with built-in generators.',
-          variant: 'inline',
-        },
-        {
-          title: 'Monorepo.',
-          icon: FiCode,
-          description: (
-            <>
-              All code is available as packages in a high-performance{' '}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
-            </>
-          ),
-          variant: 'inline',
-        },
-      ]}
-    />
+      <Features
+          id="features"
+          title={
+              <Heading
+                  lineHeight="short"
+                  fontSize={['2xl', null, '4xl']}
+                  textAlign="left"
+                  as="p"
+              >
+                  Not just another
+                  <Br /> monitoring tool.
+              </Heading>
+          }
+          description={
+              <>
+                  monitor.ai brings intelligent automation to regulatory compliance.
+                  <Br />
+                  Transform how you handle regulations and tenders with AI-powered precision.
+              </>
+          }
+          align="left"
+          columns={[1, 2, 3]}
+          iconSize={4}
+          features={[
+              {
+                  title: 'Smart Collection.',
+                  icon: FiDatabase,
+                  description:
+                      'Advanced AI agents continuously gather data from multiple sources, including government websites, databases, and official channels.',
+                  variant: 'inline',
+              },
+              {
+                  title: 'Adaptive Learning.',
+                  icon: FiCode,
+                  description:
+                      'System learns from your documents and feedback, continuously improving its ability to identify relevant regulations and opportunities.',
+                  variant: 'inline',
+              },
+              {
+                  title: 'Precision Filtering.',
+                  icon: FiFilter,
+                  description:
+                      'Sophisticated algorithms ensure you only see updates and opportunities that are relevant to your business sector.',
+                  variant: 'inline',
+              },
+              {
+                  title: 'Auto Checklists.',
+                  icon: FiCheckSquare,
+                  description:
+                      'Automatically generate compliance checklists from regulatory documents, breaking down requirements into actionable tasks.',
+                  variant: 'inline',
+              },
+              {
+                  title: 'Risk Assessment.',
+                  icon: FiShield,
+                  description:
+                      'Proactive identification of compliance risks and gaps, with automated alerts and priority scoring for critical issues.',
+                  variant: 'inline',
+              },
+              {
+                  title: 'Tender Assistant.',
+                  icon: FiAward,
+                  description:
+                      'Smart tools for tender analysis, requirement matching, and automated document generation to streamline your submission process.',
+                  variant: 'inline',
+              },
+              {
+                  title: 'Progress Tracking.',
+                  icon: FiTrello,
+                  description:
+                      'Comprehensive dashboard for monitoring compliance status, tender deadlines, and team progress in real-time.',
+                  variant: 'inline',
+              },
+              {
+                  title: 'Team Collaboration.',
+                  icon: FiUsers,
+                  description:
+                      'Built-in tools for task assignment, document sharing, and progress tracking to keep your entire team aligned.',
+                  variant: 'inline',
+              },
+              {
+                  title: 'Analytics.',
+                  icon: FiPieChart,
+                  description: (
+                      <>
+                          Detailed insights into your compliance performance, tender success rates,
+                          and opportunities for improvement through advanced analytics.
+                      </>
+                  ),
+                  variant: 'inline',
+              },
+          ]}
+      />
   )
 }
 
