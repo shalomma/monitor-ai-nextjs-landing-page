@@ -254,7 +254,7 @@ const HighlightsSection = () => {
               name="Sarah Chen"
               description="Compliance Manager"
               avatar="/static/images/avatar.jpg"
-              gradient={['purple.600', 'blue.800']}
+              gradient={['purple.2000', 'blue.1400']}
           >
               &quot;monitor.ai transformed our compliance workflow completely. We went from
               spending hours scanning documents to receiving perfectly filtered updates
