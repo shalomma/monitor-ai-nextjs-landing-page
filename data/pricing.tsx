@@ -1,113 +1,102 @@
 import { HStack, Text } from '@chakra-ui/react'
 
 export default {
-  title: 'Pricing for every stage',
+  title: 'Solutions for every organization',
   description:
-    'Pay once and get life-time access to our high quality components.',
+      'Contact us to discover how monitor.ai can transform your compliance and tender processes.',
   plans: [
-    {
-      id: 'oss',
-      title: 'Open Source',
-      description: 'Basic compoents, perfect to get started.',
-      price: 'Free',
-      features: [
-        {
-          title: 'MIT License',
-        },
-        {
-          title: 'Authentication (Clerk/Supabase/Magic)',
-        },
-        {
-          title: 'Form (react-hook-form)',
-        },
-        {
-          title: 'Modals manager',
-        },
-        {
-          title: 'Hotkeys',
-        },
-        {
-          title: 'Web3 components',
-        },
-        {
-          title: 'And much more...',
-        },
-      ],
-      action: {
-        href: '#',
-      },
-    },
-    {
-      id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
-      price: 'Free',
-      isRecommended: true,
-      features: [
-        {
-          title: 'One project',
-        },
-        {
-          title: 'One developer',
-        },
-        {
-          title: 'Advanced components',
-        },
-        {
-          title: 'Multiple themes',
-        },
-        {
-          title: 'Next.js and Electron boilerplates',
-        },
-        {
-          title: 'Private discord community',
-        },
-        {
-          title: '1 year of updates',
-        },
-        null,
-        {
-          title: 'Private beta access',
-          iconColor: 'green.500',
-        },
-      ],
-      action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Single%20license',
-      },
-    },
     {
       id: 'startup',
       title: 'Startup',
-      description: 'Unlimited license for growing teams.',
-      price: (
-        <HStack>
-          <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
-          </Text>
-          <Text>€499,-</Text>
-        </HStack>
-      ),
+      description: 'Perfect for growing companies navigating regulations.',
+      price: 'Contact Us',
       features: [
         {
-          title: 'Unlimited projects',
+          title: 'AI-powered regulation monitoring',
         },
         {
-          title: 'Unlimited developers',
+          title: 'Basic compliance checklists',
         },
         {
-          title: '1 year of updates',
+          title: 'Tender opportunity alerts',
         },
         {
-          title: 'Everything from Bootstrap',
+          title: 'Document analysis',
         },
-        null,
         {
-          title: 'Private beta access',
-          iconColor: 'green.500',
+          title: 'Email support',
+        },
+        {
+          title: 'Perfect for seed to series A startups',
         },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Unlimited%20license',
+        href: '#contact',
+        label: 'Schedule Demo'
+      },
+    },
+    {
+      id: 'partner',
+      title: 'Partner Program',
+      description: 'For accounting firms and legal consultancies.',
+      price: 'Partner With Us',
+      isRecommended: true,
+      features: [
+        {
+          title: 'White-label options',
+        },
+        {
+          title: 'Multi-client management',
+        },
+        {
+          title: 'Integration with your services',
+        },
+        {
+          title: 'Co-branding opportunities',
+        },
+        {
+          title: 'Partner success manager',
+        },
+        {
+          title: 'Revenue sharing model',
+        },
+        {
+          title: 'Early access to new features',
+        },
+      ],
+      action: {
+        href: '#partner',
+        label: 'Become a Partner'
+      },
+    },
+    {
+      id: 'enterprise',
+      title: 'Enterprise',
+      description: 'Custom solutions for large organizations.',
+      price: 'Custom Pricing',
+      features: [
+        {
+          title: 'Full platform customization',
+        },
+        {
+          title: 'Dedicated support team',
+        },
+        {
+          title: 'Custom integrations',
+        },
+        {
+          title: 'Advanced analytics',
+        },
+        {
+          title: 'SLA guarantees',
+        },
+        {
+          title: 'On-premise options available',
+        },
+      ],
+      action: {
+        href: '#enterprise',
+        label: 'Contact Sales'
       },
     },
   ],
