@@ -8,7 +8,7 @@ const siteConfig = {
   logo: Logo,
   seo: {
     title: 'monitor.ai',
-    description: 'The compliance and tender monitoring platform for growing companies.',
+    description: 'Stay Ahead of the Curve.',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
