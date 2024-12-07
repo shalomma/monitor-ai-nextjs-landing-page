@@ -26,15 +26,15 @@ const siteConfig = {
         id: 'faq',
         label: 'FAQ',
       },
-      // {
-      //   label: 'Login',
-      //   href: '/login',
-      // },
-      // {
-      //   label: 'Sign Up',
-      //   href: '/signup',
-      //   variant: 'primary',
-      // },
+      {
+        label: 'Login',
+        href: 'https://github.com/saas-js/saas-ui',
+      },
+      {
+        label: 'Sign Up',
+        href: 'https://github.com/saas-js/saas-ui',
+        variant: 'primary',
+      },
     ],
   },
   footer: {
