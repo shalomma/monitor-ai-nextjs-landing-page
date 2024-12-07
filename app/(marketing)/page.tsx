@@ -20,22 +20,26 @@ import { Br, Link } from '@saas-ui/react'
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import {
-  FiArrowRight,
-  FiBox,
-  FiCheck,
-  FiCode,
-  FiCopy,
-  FiFlag,
-  FiGrid,
-  FiLock,
-  FiSearch,
-  FiSliders,
-  FiSmile,
-  FiTerminal,
-  FiThumbsUp,
-  FiToggleLeft,
-  FiTrendingUp,
-  FiUserPlus,
+    FiArrowRight,
+    FiBox,
+    FiCheck,
+    FiCode,
+    FiCopy,
+    FiFlag,
+    FiGrid,
+    FiLock,
+    FiSearch,
+    FiSliders,
+    FiSmile,
+    FiTerminal,
+    FiThumbsUp,
+    FiToggleLeft,
+    FiTrendingUp,
+    FiUserPlus,
+    FiFilter,
+    FiMonitor,
+    FiCheckSquare,
+    FiAward,
 } from 'react-icons/fi'
 
 import * as React from 'react'
@@ -83,24 +87,24 @@ const HeroSection: React.FC = () => {
       <Container maxW="container.xl" pt={{ base: 40, lg: 60 }} pb="40">
         <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
           <Hero
-            id="home"
-            justifyContent="flex-start"
-            px="0"
-            title={
-              <FallInPlace>
-                Build beautiful
-                <Br /> software faster
-              </FallInPlace>
-            }
-            description={
-              <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{' '}
-                build intuitive SaaS products with speed.
-              </FallInPlace>
-            }
+              id="home"
+              justifyContent="flex-start"
+              px="0"
+              title={
+                <FallInPlace>
+                  Simplify compliance
+                  <Br /> monitoring instantly
+                </FallInPlace>
+              }
+              description={
+                <FallInPlace delay={0.4} fontWeight="medium">
+                  monitor.ai is an <Em>intelligent monitoring system</Em>
+                  <Br /> that streamlines your regulatory compliance and <Br />{' '}
+                  helps you win tenders with precision.
+                </FallInPlace>
+              }
           >
-            <FallInPlace delay={0.8}>
+          <FallInPlace delay={0.8}>
               <HStack pt="4" pb="12" spacing="8">
                 <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
               </HStack>
@@ -161,47 +165,47 @@ const HeroSection: React.FC = () => {
         </Stack>
       </Container>
 
-      <Features
-        id="benefits"
-        columns={[1, 2, 4]}
-        iconSize={4}
-        innerWidth="container.xl"
-        pt="20"
-        features={[
-          {
-            title: 'Accessible',
-            icon: FiSmile,
-            description: 'All components strictly follow WAI-ARIA standards.',
-            iconPosition: 'left',
-            delay: 0.6,
-          },
-          {
-            title: 'Themable',
-            icon: FiSliders,
-            description:
-              'Fully customize all components to your brand with theme support and style props.',
-            iconPosition: 'left',
-            delay: 0.8,
-          },
-          {
-            title: 'Composable',
-            icon: FiGrid,
-            description:
-              'Compose components to fit your needs and mix them together to create new ones.',
-            iconPosition: 'left',
-            delay: 1,
-          },
-          {
-            title: 'Productive',
-            icon: FiThumbsUp,
-            description:
-              'Designed to reduce boilerplate and fully typed, build your product at speed.',
-            iconPosition: 'left',
-            delay: 1.1,
-          },
-        ]}
-        reveal={FallInPlace}
-      />
+        <Features
+            id="benefits"
+            columns={[1, 2, 4]}
+            iconSize={4}
+            innerWidth="container.xl"
+            pt="20"
+            features={[
+                {
+                    title: 'Smart Filtering',
+                    icon: FiFilter,
+                    description: 'AI-powered system learns your needs and delivers only relevant information.',
+                    iconPosition: 'left',
+                    delay: 0.6,
+                },
+                {
+                    title: 'Automated Monitoring',
+                    icon: FiMonitor,
+                    description:
+                        'Continuous scanning of multiple sources for regulations and tenders that matter to you.',
+                    iconPosition: 'left',
+                    delay: 0.8,
+                },
+                {
+                    title: 'Compliance Tracking',
+                    icon: FiCheckSquare,
+                    description:
+                        'Generate actionable checklists and track your regulatory compliance progress automatically.',
+                    iconPosition: 'left',
+                    delay: 1,
+                },
+                {
+                    title: 'Tender Success',
+                    icon: FiAward,
+                    description:
+                        'Streamline tender submissions with AI-generated documents and deadline tracking.',
+                    iconPosition: 'left',
+                    delay: 1.1,
+                },
+            ]}
+            reveal={FallInPlace}
+        />
     </Box>
   )
 }
