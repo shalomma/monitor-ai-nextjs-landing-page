@@ -51,8 +51,8 @@ const Signup: NextPage = () => {
                         <NextLink href="/">
                             <Box
                                 as={siteConfig.logo}
-                                width="320px"
-                                ms="4"
+                                width={{ base: '220px', lg: '320px' }}
+                                ms={{ base: 'auto', lg: 20 }}
                                 mb={{ base: 0, lg: 16 }}
                             />
                         </NextLink>
@@ -72,7 +72,7 @@ const Signup: NextPage = () => {
                         />
                     </Box>
                     <Center height="100%" flex="1">
-                        <Box width="container.sm" pt="8" px="8">
+                        <Box width={{ base: '100%', sm: 'container.sm' }} pt="8" px="8">
                             <Form onSubmit={saveHandler}>
                                 {({ Field }) => (
                                     <FormLayout>
