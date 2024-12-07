@@ -7,8 +7,8 @@ import { Logo } from './logo'
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    title: 'monitor.ai',
+    description: 'The compliance and tender monitoring platform for growing companies.',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
@@ -41,12 +41,12 @@ const siteConfig = {
     copyright: (
       <>
         Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        <Link href="https://www.linkedin.com/in/maayanshalom/">Maayan Shalom</Link>
       </>
     ),
     links: [
       {
-        href: 'mailto:hello@saas-ui.dev',
+        href: 'mailto:maayan@monitorai.co',
         label: 'Contact',
       },
       {
@@ -54,36 +54,36 @@ const siteConfig = {
         label: <FaTwitter size="14" />,
       },
       {
-        href: 'https://github.com/saas-js/saas-ui',
+        href: 'https://github.com/Monitor-ai-code',
         label: <FaGithub size="14" />,
       },
     ],
   },
   signup: {
-    title: 'Start building with Saas UI',
+    title: 'Transform your compliance process',
     features: [
       {
         icon: FiCheck,
-        title: 'Accessible',
-        description: 'All components strictly follow WAI-ARIA standards.',
+        title: 'Smart Monitoring',
+        description: 'AI-powered system that automatically tracks relevant regulations and tenders across multiple sources.',
       },
       {
         icon: FiCheck,
-        title: 'Themable',
+        title: 'Time Saving',
         description:
-          'Fully customize all components to your brand with theme support and style props.',
+            'Reduce document review time by up to 70% with intelligent filtering and automated compliance checklists.',
       },
       {
         icon: FiCheck,
-        title: 'Composable',
+        title: 'Risk Reduction',
         description:
-          'Compose components to fit your needs and mix them together to create new ones.',
+            'Never miss critical regulatory updates or tender deadlines with proactive alerts and risk assessments.',
       },
       {
         icon: FiCheck,
-        title: 'Productive',
+        title: 'Competitive Edge',
         description:
-          'Designed to reduce boilerplate and fully typed, build your product at speed.',
+            'Stay ahead of opportunities with AI-assisted tender analysis and automated submission preparation.',
       },
     ],
   },
