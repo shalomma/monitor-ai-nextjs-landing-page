@@ -1,4 +1,3 @@
-import { Button } from '@chakra-ui/react'
 import { Link } from '@saas-ui/react'
 import { NextSeoProps } from 'next-seo'
 import { FaGithub, FaTwitter } from 'react-icons/fa'
@@ -27,15 +26,15 @@ const siteConfig = {
         id: 'faq',
         label: 'FAQ',
       },
-      {
-        label: 'Login',
-        href: '/login',
-      },
-      {
-        label: 'Sign Up',
-        href: '/signup',
-        variant: 'primary',
-      },
+      // {
+      //   label: 'Login',
+      //   href: '/login',
+      // },
+      // {
+      //   label: 'Sign Up',
+      //   href: '/signup',
+      //   variant: 'primary',
+      // },
     ],
   },
   footer: {

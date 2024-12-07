@@ -75,7 +75,7 @@ const Login: NextPage = () => {
                 view="signup"
                 title={siteConfig.signup.title}
                 providers={providers}
-                loginLink={<Link href="/login">Log in</Link>}
+                loginLink={<Link href="../login">Log in</Link>}
               >
                 <Text color="muted" fontSize="sm">
                   By signing up you agree to our{' '}
