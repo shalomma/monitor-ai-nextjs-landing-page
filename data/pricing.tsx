@@ -29,7 +29,7 @@ export default {
         },
       ],
       action: {
-        href: '#contact',
+        href: 'signup',
         label: 'Schedule Demo'
       },
     },
@@ -63,7 +63,7 @@ export default {
         },
       ],
       action: {
-        href: '#partner',
+        href: 'signup',
         label: 'Become a Partner'
       },
     },
@@ -93,7 +93,7 @@ export default {
         },
       ],
       action: {
-        href: '#enterprise',
+        href: 'signup',
         label: 'Contact Sales'
       },
     },
