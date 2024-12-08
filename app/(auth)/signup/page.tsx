@@ -47,13 +47,14 @@ const Signup: NextPage = () => {
                     spacing="20"
                     flexDirection={{ base: 'column', lg: 'row' }}
                 >
+                    <Center height="100vh" flex="1">
                     <Box pe="20">
                         <NextLink href="/">
                             <Box
                                 as={siteConfig.logo}
                                 width={{ base: '220px', lg: '320px' }}
-                                ms={{ base: 'auto', lg: 20 }}
-                                mb={{ base: 0, lg: 16 }}
+                                ms={{ base: 'auto', lg: 'auto' }}
+                                mb={{ base: 'auto', lg: 'auto' }}
                             />
                         </NextLink>
                         <Features
@@ -71,7 +72,8 @@ const Signup: NextPage = () => {
                             }))}
                         />
                     </Box>
-                    <Center height="100%" flex="1">
+                    </Center>
+                    <Center height="100vh" flex="1">
                         <Box width={{ base: '100%', sm: 'container.sm' }} pt="8" px="8">
                             <Form onSubmit={saveHandler}>
                                 {({ Field }) => (
