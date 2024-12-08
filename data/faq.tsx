@@ -21,7 +21,7 @@ const faq = {
     },
     {
       q: 'How does the partnership program work?',
-      a: 'Our partnership program is designed for accounting firms, legal consultancies, and other professional service providers. Partners can offer monitor.ai to their clients either as a white-labeled solution or as part of their service package. We provide full training, support, and competitive revenue sharing models.',
+      a: 'Our partnership program is designed for accounting firms, legal consultancies, and other professional service providers. Partners can offer monitor.ai to their clients either as a white-labeled solution or as part of their service package.',
     },
     {
       q: 'Can monitor.ai integrate with our existing compliance tools?',

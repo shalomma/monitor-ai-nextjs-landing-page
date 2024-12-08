@@ -25,7 +25,7 @@ export default {
           title: 'Email support',
         },
         {
-          title: 'Perfect for seed to series A startups',
+          title: 'Perfect for seed to series A',
         },
       ],
       action: {
@@ -54,9 +54,6 @@ export default {
         },
         {
           title: 'Partner success manager',
-        },
-        {
-          title: 'Revenue sharing model',
         },
         {
           title: 'Early access to new features',
