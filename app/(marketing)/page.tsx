@@ -82,8 +82,10 @@ const HeroSection: React.FC = () => {
               px="0"
               title={
                 <FallInPlace>
-                  Simplify compliance
-                  <Br /> monitoring instantly
+                    <Text fontSize={{ base: '4xl', md: '5xl' }}>
+                      Simplify compliance
+                      <Br /> monitoring instantly
+                    </Text>
                 </FallInPlace>
               }
               description={
