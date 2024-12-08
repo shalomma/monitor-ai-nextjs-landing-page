@@ -52,9 +52,9 @@ const Signup: NextPage = () => {
                         <NextLink href="/">
                             <Box
                                 as={siteConfig.logo}
-                                width={{ base: '220px', lg: '320px' }}
-                                ms={{ base: 'auto', lg: 20 }}
-                                mb={{ base: 'auto', lg: 'auto' }}
+                                width={{ base: '200px', lg: '320px' }}
+                                ms={{ base: -10, sm: -130, md: -130, lg: 20}}
+                                mb={{ base: -40, sm: -40, md: -40, lg: 'auto'}}
                             />
                         </NextLink>
                         <Features
