@@ -95,7 +95,14 @@ const Signup: NextPage = () => {
                                             label="Phone Number"
                                             type="number"
                                             inputMode="tel"
+                                            placeholder="Optional"
                                             hideStepper={true}
+                                        />
+                                        <Field
+                                            name="description"
+                                            type="textarea"
+                                            label="Additional information"
+                                            placeholder="Optional"
                                         />
                                         <SubmitButton disableIfInvalid>Submit</SubmitButton>
                                     </FormLayout>
