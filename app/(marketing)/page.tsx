@@ -97,10 +97,7 @@ const HeroSection: React.FC = () => {
               }
           >
           <FallInPlace delay={0.8}>
-              <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
-              </HStack>
-
+              <HStack pt="4" pb="6" spacing="8"></HStack>
               <ButtonGroup spacing={4} alignItems="center">
                 <ButtonLink
                     // colorScheme="primary"
@@ -132,6 +129,7 @@ const HeroSection: React.FC = () => {
               </ButtonGroup>
             </FallInPlace>
           </Hero>
+
           <Box
             height="600px"
             position="absolute"
