@@ -142,7 +142,7 @@ const HeroSection: React.FC = () => {
             margin="0 auto"
           >
             <FallInPlace delay={1}>
-              <Box overflow="hidden" height="100%">
+              <Box overflow="hidden" height="100%" borderRadius="lg">
                 <Image
                   src="/static/screenshots/list.png"
                   width={1200}
