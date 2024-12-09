@@ -147,7 +147,7 @@ const HeroSection: React.FC = () => {
                   src="/static/screenshots/list.png"
                   width={1200}
                   height={762}
-                  alt="Screenshot of a ListPage in Saas UI Pro"
+                  alt="Screenshot of a space in monitor.ai"
                   quality="75"
                   priority
                 />
