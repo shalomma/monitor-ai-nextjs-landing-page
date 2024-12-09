@@ -44,7 +44,6 @@ import {
   HighlightsItem,
   HighlightsTestimonialItem,
 } from '#components/highlights'
-import { ChakraLogo, NextjsLogo } from '#components/logos'
 import { FallInPlace } from '#components/motion/fall-in-place'
 import { Pricing } from '#components/pricing/pricing'
 import { Testimonial, Testimonials } from '#components/testimonials'
