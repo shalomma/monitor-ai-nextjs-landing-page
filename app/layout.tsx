@@ -1,5 +1,5 @@
-// import { theme } from '@chakra-ui/react'
 import { ColorModeScript } from '@chakra-ui/react'
+import { Analytics } from "@vercel/analytics/react"
 
 import { Provider } from './provider'
 import React from "react";
@@ -29,6 +29,7 @@ export default function Layout(props: { children: React.ReactNode }) {
       <body className={`chakra-ui-${colorMode}`}>
         <ColorModeScript initialColorMode={colorMode} />
         <Provider>{props.children}</Provider>
+        <Analytics />
       </body>
     </html>
   )
