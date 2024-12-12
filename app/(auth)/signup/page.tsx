@@ -11,7 +11,6 @@ import { BackgroundGradient } from '#components/gradients/background-gradient'
 import { PageTransition } from '#components/motion/page-transition'
 import { Section } from '#components/section'
 import siteConfig from '#data/config'
-import * as process from "node:process";
 
 const Signup: NextPage = () => {
     const [isMounted, setIsMounted] = useState(false)
