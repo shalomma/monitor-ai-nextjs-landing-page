@@ -23,8 +23,3 @@ export async function POST(request: NextRequest) {
         return NextResponse.error();
     }
 }
-
-export function GET(request: Request) {
-    return new Response(`Hello from ${process.env.VERCEL_REGION}`);
-}
-
