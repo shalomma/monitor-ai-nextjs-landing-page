@@ -243,7 +243,7 @@ const HighlightsSection = () => {
                               Try monitor.ai
                           </Text>{' '}
                           <Text color="cyan.300" display={{ base: 'block', md: 'inline' }}>
-                              Free trial available
+                              Demo available
                           </Text>
                       </Box>
                       <IconButton
