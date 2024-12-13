@@ -7,7 +7,7 @@ import { BackgroundGradient } from 'components/gradients/background-gradient'
 import { PageTransition } from 'components/motion/page-transition'
 import { Section } from 'components/section'
 import { NextPage } from 'next'
-import { FaGithub, FaGoogle } from 'react-icons/fa'
+// import { FaGithub, FaGoogle } from 'react-icons/fa'
 
 // const providers = {
 //   google: {
@@ -41,14 +41,14 @@ const Login: NextPage = () => {
         <Center height="100%" pt="20">
           <PageTransition width="100%">
             <Heading as="h1" size="lg" mb="8" textAlign="center">Login</Heading>
-            <Stack width="100%" spacing={4}>
-              <Button leftIcon={<FaGoogle />} onClick={handleProviderClick} width="100%" height="40px">
-                Login with Google
-              </Button>
-              <Button leftIcon={<FaGithub />} onClick={handleProviderClick} width="100%" height="40px">
-                Login with Github
-              </Button>
-            </Stack>
+            {/*<Stack width="100%" spacing={4}>*/}
+            {/*  <Button leftIcon={<FaGoogle />} onClick={handleProviderClick} width="100%" height="40px">*/}
+            {/*    Login with Google*/}
+            {/*  </Button>*/}
+            {/*  <Button leftIcon={<FaGithub />} onClick={handleProviderClick} width="100%" height="40px">*/}
+            {/*    Login with Github*/}
+            {/*  </Button>*/}
+            {/*</Stack>*/}
             <Auth
                 title=""
                 view="login"
