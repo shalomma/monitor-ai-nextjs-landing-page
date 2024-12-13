@@ -71,7 +71,7 @@ const TermsOfService = () => {
               To the maximum extent permitted by law:
             </Text>
             <VStack align="stretch" pl={4} mb={4}>
-              <Text>- Our website is provided "as is" without any warranties, express or implied</Text>
+              <Text>- Our website is provided &quot;as is&quot; without any warranties, express or implied</Text>
               <Text>- We do not guarantee that our website will be uninterrupted, timely, secure, or error-free</Text>
               <Text>- We are not liable for any indirect, incidental, special, consequential, or punitive damages</Text>
               <Text>- Our total liability for any claims arising from these terms or your use of the website shall not exceed the amount paid by you, if any, for accessing our website</Text>

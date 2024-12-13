@@ -25,7 +25,7 @@ const PrivacyPolicyPage = () => {
                         Introduction
                     </Heading>
                     <Text mb={4}>
-                        monitor.ai ("we," "us," or "our") is committed to protecting the privacy of visitors to our website.
+                        monitor.ai (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to protecting the privacy of visitors to our website.
                         This Privacy Policy explains how we collect, use, store, and protect personal information obtained through our landing page.
                     </Text>
                 </Box>
