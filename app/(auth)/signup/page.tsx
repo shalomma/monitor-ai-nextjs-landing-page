@@ -20,24 +20,15 @@ const Signup: NextPage = () => {
     }, [])
 
     const saveHandler = (data) => {
-        console.log(data)
-        const url = `https://api.clickup.com/api/v2/list/${process.env.CLICKUP_LIST_ID}/task`;
+        console.log(data);
+        const url = '/api/clickup'; // The Vercel endpoint you created
         const options = {
             method: 'POST',
             headers: {
                 accept: 'application/json',
-                'content-type': 'application/json',
-                Authorization: `${process.env.CLICKUP_API_KEY}`
+                'content-type': 'application/json'
             },
-            body: JSON.stringify(
-                {
-                    name: data.name,
-                    description: data.description,
-                    status: 'Open',
-                    email: data.email,
-                    phone: data.phone
-                }
-            )
+            body: JSON.stringify(data)
         };
         fetch(url, options)
             .then(res => res.json())
