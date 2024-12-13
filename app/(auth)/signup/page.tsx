@@ -163,16 +163,16 @@ const Signup: NextPage = () => {
                             <Text color="muted" fontSize="sm" mt="4">
                                 By signing up you agree to our{' '}
                                 <NextLink href={siteConfig.termsUrl} passHref>
-                                    <Text as="a" color="white">
+                                    <Text as="a" _dark={{ color: "white" }}>
                                         Terms of Service
                                     </Text>
-                                </NextLink>{' '}
-                                and{' '}
-                                <NextLink href={siteConfig.privacyUrl} passHref>
-                                    <Text as="a" color="white">
-                                        Privacy Policy
-                                    </Text>
-                                </NextLink>
+                                </NextLink>{'.'}
+                                {/*and{' '}*/}
+                                {/*<NextLink href={siteConfig.privacyUrl} passHref>*/}
+                                {/*    <Text as="a" color="white">*/}
+                                {/*        Privacy Policy*/}
+                                {/*    </Text>*/}
+                                {/*</NextLink>*/}
                             </Text>
                         </Box>
                     </Center>
