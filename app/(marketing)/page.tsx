@@ -51,6 +51,11 @@ import { Em } from '#components/typography'
 import faq from '#data/faq'
 import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
+
+import { useColorMode } from '@chakra-ui/react'
+// import { useEffect, useState } from 'react'
+
+
 const Home: NextPage = () => {
   return (
     <Box>
@@ -70,7 +75,9 @@ const Home: NextPage = () => {
 }
 
 const HeroSection: React.FC = () => {
-  return (
+    const { colorMode } = useColorMode()
+
+    return (
     <Box position="relative" overflow="hidden">
       <BackgroundGradient height="100%" zIndex="-1" />
       <Container maxW="container.xl" pt={{ base: 40, lg: 60 }} pb="40">
@@ -140,14 +147,25 @@ const HeroSection: React.FC = () => {
           >
             <FallInPlace delay={1}>
               <Box overflow="hidden" height="100%" borderRadius="lg">
-                <Image
-                  src="/static/screenshots/list.png"
-                  width={1200}
-                  height={762}
-                  alt="Screenshot of a space in monitor.ai"
-                  quality="75"
-                  priority
-                />
+                  {colorMode === 'light' ? (
+                      <Image
+                          src="/static/screenshots/list-light.png"
+                          width={1200}
+                          height={762}
+                          alt="Screenshot of a space in monitor.ai"
+                          quality="75"
+                          priority
+                      />
+                  ) : (
+                      <Image
+                          src="/static/screenshots/list-dark.png"
+                          width={1200}
+                          height={762}
+                          alt="Screenshot of a space in monitor.ai"
+                          quality="75"
+                          priority
+                      />
+                  )}
               </Box>
             </FallInPlace>
           </Box>
