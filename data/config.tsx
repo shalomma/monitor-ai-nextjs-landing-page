@@ -10,7 +10,7 @@ const siteConfig = {
     title: 'monitor.ai',
     description: 'Stay Ahead of the Curve.',
   } as NextSeoProps,
-  termsUrl: '#',
+  termsUrl: '/terms',
   privacyUrl: '#',
   header: {
     links: [
