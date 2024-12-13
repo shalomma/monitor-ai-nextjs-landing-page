@@ -53,7 +53,6 @@ import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
 
 import { useColorMode } from '@chakra-ui/react'
-// import { useEffect, useState } from 'react'
 
 
 const Home: NextPage = () => {
