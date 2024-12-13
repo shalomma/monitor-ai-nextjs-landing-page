@@ -1,6 +1,6 @@
 'use client'
 
-import { Center, useToast, Button, Stack, Heading } from '@chakra-ui/react'
+import { Center, useToast, Heading } from '@chakra-ui/react'
 import { Auth } from '@saas-ui/auth'
 import { Link } from '@saas-ui/react'
 import { BackgroundGradient } from 'components/gradients/background-gradient'
@@ -24,15 +24,15 @@ import { NextPage } from 'next'
 const Login: NextPage = () => {
   const toast = useToast()
 
-  const handleProviderClick = () => {
-    toast({
-      title: 'Not available',
-      description: 'This login method is currently not available.',
-      status: 'warning',
-      duration: 5000,
-      isClosable: true,
-    })
-  }
+  // const handleProviderClick = () => {
+  //   toast({
+  //     title: 'Not available',
+  //     description: 'This login method is currently not available.',
+  //     status: 'warning',
+  //     duration: 5000,
+  //     isClosable: true,
+  //   })
+  // }
 
   return (
       <Section height="calc(100vh - 200px)" innerWidth="container.sm">
