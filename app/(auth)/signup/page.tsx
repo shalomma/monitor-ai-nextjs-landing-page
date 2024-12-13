@@ -166,13 +166,13 @@ const Signup: NextPage = () => {
                                     <Text as="a" _dark={{ color: "white" }}>
                                         Terms of Service
                                     </Text>
+                                </NextLink>{' '}
+                                and{' '}
+                                <NextLink href={siteConfig.privacyUrl} passHref>
+                                    <Text as="a" color="white">
+                                        Privacy Policy
+                                    </Text>
                                 </NextLink>{'.'}
-                                {/*and{' '}*/}
-                                {/*<NextLink href={siteConfig.privacyUrl} passHref>*/}
-                                {/*    <Text as="a" color="white">*/}
-                                {/*        Privacy Policy*/}
-                                {/*    </Text>*/}
-                                {/*</NextLink>*/}
                             </Text>
                         </Box>
                     </Center>

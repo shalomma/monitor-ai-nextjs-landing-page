@@ -11,7 +11,7 @@ const siteConfig = {
     description: 'Stay Ahead of the Curve.',
   } as NextSeoProps,
   termsUrl: '/terms',
-  privacyUrl: '#',
+  privacyUrl: '/privacy-policy',
   header: {
     links: [
       {
@@ -48,6 +48,10 @@ const siteConfig = {
       {
         label: 'Terms of Use',
         href: '/terms',
+      },
+      {
+        label: 'Privacy Policy',
+        href: '/privacy-policy',
       },
       {
         href: 'mailto:maayan@monitorai.co',

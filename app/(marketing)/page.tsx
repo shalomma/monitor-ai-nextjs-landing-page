@@ -95,9 +95,9 @@ const HeroSection: React.FC = () => {
               }
               description={
                 <FallInPlace delay={0.4} fontWeight="medium">
-                  monitor.ai is an <Em>intelligent monitoring system</Em> {' '}
-                  that streamlines your regulatory compliance and {' '}
-                  helps you win tenders with precision.
+                    monitor.ai is an <Em>intelligent compliance platform</Em> {' '}
+                    that automatically tracks regulatory updates and {' '}
+                    ensures your business stays compliant.
                 </FallInPlace>
               }
           >
