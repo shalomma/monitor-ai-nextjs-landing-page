@@ -38,25 +38,29 @@ const siteConfig = {
     ],
   },
   footer: {
-    copyright: (
-      <>
-        Built by{' '}
-        <Link href="https://www.linkedin.com/in/maayanshalom/">Maayan Shalom</Link>
-      </>
-    ),
+    // copyright: (
+    //   <>
+    //     Built by{' '}
+    //     <Link href="https://www.linkedin.com/in/maayanshalom/">Maayan Shalom</Link>
+    //   </>
+    // ),
     links: [
+      {
+        label: 'Terms of Use',
+        href: '/terms',
+      },
       {
         href: 'mailto:maayan@monitorai.co',
         label: 'Contact',
       },
-      {
-        href: 'https://twitter.com/saas_js',
-        label: <FaTwitter size="14" />,
-      },
-      {
-        href: 'https://github.com/Monitor-ai-code',
-        label: <FaGithub size="14" />,
-      },
+      // {
+      //   href: 'https://twitter.com/saas_js',
+      //   label: <FaTwitter size="14" />,
+      // },
+      // {
+      //   href: 'https://github.com/Monitor-ai-code',
+      //   label: <FaGithub size="14" />,
+      // },
     ],
   },
   signup: {
