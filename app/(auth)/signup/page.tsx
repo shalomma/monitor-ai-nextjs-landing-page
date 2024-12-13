@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Box, Center, Stack, Text, Heading } from '@chakra-ui/react'
+import { Box, Center, Stack, Text, Heading, Alert, AlertIcon } from '@chakra-ui/react'
 import { Form, FormLayout, SubmitButton } from '@saas-ui/react'
 import { NextPage } from 'next'
 import NextLink from 'next/link'
@@ -14,14 +14,16 @@ import siteConfig from '#data/config'
 
 const Signup: NextPage = () => {
     const [isMounted, setIsMounted] = useState(false)
+    const [isSubmitted, setIsSubmitted] = useState(false)
+    const [error, setError] = useState<string | null>(null)
 
     useEffect(() => {
         setIsMounted(true)
     }, [])
 
-    const saveHandler = (data) => {
+    const saveHandler = async (data: { name: string; description: string; email: string; phone: any }) => {
         console.log(data);
-        const url = '/api/clickup'; // The Vercel endpoint you created
+        const url = '/api/clickup';
         const options = {
             method: 'POST',
             headers: {
@@ -32,13 +34,33 @@ const Signup: NextPage = () => {
                 name: data.name,
                 description: data.description,
                 status: 'Open',
-                custom_fields: [{id: 'da128791-b70a-4291-8e0f-a8f1c1a897ca', value: data.email}, {id: 'd8c94b0e-5fa4-46fe-a8f6-9a12a6475aca', value: data.phone}]
+                custom_fields: [
+                    {
+                        id: 'c2fb9a8c-a498-432f-9107-ec1754220399',
+                        value: data.email
+                    },
+                    {
+                        id: 'e5036c8b-8fc6-412d-a291-fa68bd98597d',
+                        value: data.phone
+                    }]
             })
         };
-        fetch(url, options)
-            .then(res => res.json())
-            .then(json => console.log(json))
-            .catch(err => console.error(err));
+        try {
+            const response = await fetch(url, options);
+            const json = await response.json();
+
+            if (response.ok) {
+                setIsSubmitted(true);
+                setError(null);
+            } else {
+                setIsSubmitted(false);
+                setError(json.message || 'Failed to submit form');
+            }
+        } catch (err) {
+            console.error(err);
+            setIsSubmitted(false);
+            setError('Network error occurred. Please try again.');
+        }
     };
 
     if (!isMounted) {
@@ -126,6 +148,18 @@ const Signup: NextPage = () => {
                                     </FormLayout>
                                 )}
                             </Form>
+                            {isSubmitted && (
+                                <Alert status="success" mt="4">
+                                    <AlertIcon />
+                                    Form submitted successfully!
+                                </Alert>
+                            )}
+                            {error && (
+                                <Alert status="error" mt="4">
+                                    <AlertIcon />
+                                    {error} {/* Now displays the actual error message */}
+                                </Alert>
+                            )}
                             <Text color="muted" fontSize="sm" mt="4">
                                 By signing up you agree to our{' '}
                                 <NextLink href={siteConfig.termsUrl} passHref>

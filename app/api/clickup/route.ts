@@ -16,10 +16,22 @@ export async function POST(request: NextRequest) {
     };
     try {
         const response = await fetch(url, options);
+        if (!response.ok) {
+            console.log(response)
+            // Return error response with status code and message
+            return NextResponse.json(
+                { message: `Submission error. Please email us.` },
+                { status: response.status }
+            );
+        }
         const json = await response.json();
         return NextResponse.json(json);
     } catch (err) {
         console.error(err);
-        return NextResponse.error();
+        // Return a proper error response instead of NextResponse.error()
+        return NextResponse.json(
+            { message: 'Failed to connect.' },
+            { status: 500 }
+        );
     }
 }
