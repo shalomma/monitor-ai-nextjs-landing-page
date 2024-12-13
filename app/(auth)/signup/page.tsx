@@ -28,7 +28,12 @@ const Signup: NextPage = () => {
                 accept: 'application/json',
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify({
+                name: data.name,
+                description: data.description,
+                status: 'Open',
+                custom_fields: [{id: 'da128791-b70a-4291-8e0f-a8f1c1a897ca', value: data.email}, {id: 'd8c94b0e-5fa4-46fe-a8f6-9a12a6475aca', value: data.phone}]
+            })
         };
         fetch(url, options)
             .then(res => res.json())

@@ -12,15 +12,8 @@ export async function POST(request: NextRequest) {
             'content-type': 'application/json',
             Authorization: `${process.env.CLICKUP_API_KEY}`
         },
-        body: JSON.stringify({
-            name: data.name,
-            description: data.description,
-            status: 'Open',
-            email: data.email,
-            phone: data.phone
-        })
+        body: JSON.stringify(data)
     };
-
     try {
         const response = await fetch(url, options);
         const json = await response.json();
